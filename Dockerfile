@@ -19,6 +19,7 @@ COPY --from=BUILD_IMAGE /app ./
 ENV PORT=3000
 
 ENV DATABASE_NAME='qa'
+
 ENV CONNECTION_URL=mongodb://appUser:ikea_bird_calls@172.31.35.247:27017
 
 EXPOSE 3000
