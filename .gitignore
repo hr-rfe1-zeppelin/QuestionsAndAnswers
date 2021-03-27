@@ -5,3 +5,4 @@ csvs/
 config.js
 node_modules
 .env
+.txt
