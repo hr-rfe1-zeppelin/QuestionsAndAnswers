@@ -34,7 +34,7 @@ module.exports.addQuestion = (newQ) => {
 };
 
 module.exports.markHelpful = (question_id) => {
-  let filter = { question_id: question_id};
+  let filter = { _id: question_id};
   let updateDoc = {
     $inc: {
       helpful: 1
@@ -44,7 +44,7 @@ module.exports.markHelpful = (question_id) => {
 };
 
 module.exports.report = (question_id) => {
-  let filter = { question_id: question_id };
+  let filter = { _id: question_id };
   let updateDoc = {
     $inc: {
       report: 1
